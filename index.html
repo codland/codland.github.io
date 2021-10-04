@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Signup</title>
+		<link href='styles/style.css' rel='stylesheet'>
+		<link rel='preconnect' href='https://fonts.googleapis.com'>
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+		<link href='https://fonts.googleapis.com/css2?family=Yaldevi&display=swap' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css2?family=Gemuni+Libre&display=swap' rel='stylesheet'>
+	</head>
+
+	<body>
+		<form action='/submit' method='post'>
+			<ul>
+				<li>
+					<label for='name'>Name:</label>
+					<strong><abbr title='required'>*</abbr></strong>
+					<input type='text' id='name' name='user_name'>
+				</li>
+				<li>
+					<label for='email'>Email:</label>
+					<strong><abbr title='required'>*</abbr></strong>
+					<input type='email' id='email' name='user_email'>
+				</li>
+				<li>
+					<label for='msg'>Message:</label>
+					<strong><abbr title='required'>*</abbr></strong>
+					<textarea id='msg' name='user_message'></textarea>
+				</li>
+				<li class='button'>
+					<button type='submit'>Send your message</button>
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
